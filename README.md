@@ -1,2 +1,2 @@
 website of our work "xxxxx",
-Visit it at xxx
+Visit it at https://kai-zhang-er.github.io/namo-dynamic/
