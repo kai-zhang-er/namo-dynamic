@@ -135,7 +135,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Solutions for navigation among movable obstacles (NAMO) usually take movable and static obstacles into account and are designed to complete the task in a static environment. However, taking dynamic obstacles such as coworkers into account could have a strong influence on the global navigation strategy. We propose a framework for NAMO in dynamic environments that considers the trade off between making detour, moving obstacles and waiting for dynamic obstacle to move in order to optimize the time to goal. In particular, we integrate the possibility to move backward to avoid the deadlock situations with dynamic obstacles using a goal generator based on reinforcement learning. The proposed method is evaluated in two simulated home and logistic scenarios and in a small scale real environment, showing its efficiency and ability to avoid deadlock situations.
+            Solutions for navigation among movable obstacles (NAMO) usually take movable and non-movable obstacles into account and are designed to complete a task in a static environment. However, taking into account dynamic obstacles such as coworkers in motion has a strong impact on the overall navigation strategy. We propose an hybrid framework (mixing model-based and learned components) for NAMO in dynamic environments that considers the trade off among making detour, moving obstacles and waiting for dynamic obstacle to move in order to optimize the time to goal. In particular, we integrate the possibility to move backward to avoid the collision with dynamic obstacles in narrow passages using a goal generator based on reinforcement learning. The proposed method is evaluated in two simulated home and warehouse scenarios and in a small scale real environment, showing its efficiency and safety to navigate in a dynamic environment.
           </p>
         </div>
       </div>
@@ -152,25 +152,18 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
+        <img src="static/images/DO_reactions.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Different reactions to dynamic obstacles.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
         <img src="static/images/system.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Overview of the system.
+          System overview
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/dy_pipeline.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Dynamic obstacle avoidance pipeline.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/schema.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Demonstration of different strategies to avoid collision.
-       </h2>
-     </div>
      
   </div>
 </div>
@@ -180,7 +173,7 @@
 
 
 
-<!-- Teaser video-->
+<!-- Teaser video
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -189,9 +182,63 @@
         <source src="static/videos/iros_video.mp4"
         type="video/mp4">
       </video>
-      <!-- <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2> -->
+    </div>
+  </div>
+</section> -->
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Simulation experiments</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/office_moveback_bypass_compress.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/warehouse_wait_remove_compress.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/warehouse_bypass_bypass_compress.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Real experiments</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/real_moveback_bypass_compress.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/real_wait_bypass_compress.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
   </div>
 </section>

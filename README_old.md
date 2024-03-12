@@ -9,6 +9,9 @@ Example project pages built using this template are:
 - https://www.vision.huji.ac.il/conffusion/
 
 
+## Test demo
+jekyll serve
+
 ## Start using the template
 To start using the template click on `Use this Template`.
 
